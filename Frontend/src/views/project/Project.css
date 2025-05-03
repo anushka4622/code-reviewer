@@ -1,0 +1,159 @@
+.project-main,.project-section{
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+}
+.project-section{
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+}
+.project-section>*{
+    height: 100%;
+    flex: 1;
+    border-radius: 0.5rem;
+}
+.project-section .chat{
+    background-color:rgb(201, 201, 201) ;
+    position: relative;
+}
+.project-section .chat .messages{
+    padding: 1rem ;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    width: 80%;
+    transform: translateX(-50%);
+    left: 50%;
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    padding-bottom: 4rem;
+    height: 100%;
+}
+.project-section .chat .messages::-webkit-scrollbar{
+    display: none;
+}
+.project-section .chat .messages .message{
+    padding: 0.4rem 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.4rem;
+    max-width: 80%;
+    width: fit-content;
+    background-color: #d3d1d1;
+}
+.project-section .chat .input-area{
+   position: absolute;
+   width: 80%;
+   background-color: rgb(209, 209, 209);
+   transform: translateX(-50%);
+   left: 50%;
+   border-radius: 1rem;
+   padding: 0.8rem;
+   display: flex;
+   gap: 1rem;
+   bottom: 1rem;
+}
+.project-section .chat .input-area input{
+    padding: 0.5rem 0.7rem;
+    width:100% ;
+    background-color:transparent ;
+    border: none;
+    outline: none;
+}
+.project-section .chat .input-area button{
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color:transparent ;
+    color: rgb(24, 24, 24);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.project-section .code{
+    background-color: black;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 0.5rem;
+}
+
+.project-section .code .language-selector {
+    padding: 0.5rem;
+    background-color: #0c0c0c;
+    border-bottom: 1px solid #333;
+
+}
+
+.project-section .code .language-selector select {
+    padding: 0.3rem 0.5rem;
+    background-color: #2d2d2d;
+    color: #fff;
+    border: 1px solid #3e3e3e;
+    border-radius: 0.3rem;
+    outline: none;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.project-section .code .language-selector select:hover {
+    border-color: #525252;
+}
+
+.project-section .code .editor-container {
+    flex: 1;
+}
+
+.project-section .review{
+    background-color: rgb(252, 234, 229);
+    position: relative;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.project-section .review .get-review{
+    position: absolute;
+    top:1rem;
+    right: 1rem;
+    padding:0.5rem 1rem ;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #fdfcfc;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgb(199, 199, 199);
+}
+
+.project-section .review .review-content {
+    margin-top: 3rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-section .review .review-content pre {
+    background-color: #f6f8fa;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    overflow-x: auto;
+}
+
+.project-section .review .review-content code {
+    font-family: monospace;
+    background-color: #f6f8fa;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.2rem;
+}
+
+.project-section .review .review-content ul,
+.project-section .review .review-content ol {
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+}
+
+.project-section .review .review-content h1,
+.project-section .review .review-content h2,
+.project-section .review .review-content h3 {
+    margin: 1.5rem 0 1rem;
+}
