@@ -74,6 +74,43 @@ Before setting up the project, make sure you have the following installed:
 - **MongoDB** (local or cloud instance like MongoDB Atlas)
 - **npm** (or any other package manager) for installing dependencies
 
----
+### **Setup Instructions**
+
+1. **Clone the Repository**
+   git clone https://github.com/anushka4622/code-reviewer.git
+   cd code-reviewer
+   
+2.**Install Dependencies Navigate to the project directory and install the required packages:**
+   npm install
+   Set Up Environment Variables(.env file)
+
+3.**Create a .env file in the root directory of the project.**
+  Add the following configuration:
+  env
+  PORT=5000
+  Google_API_KEY=<you can create it by google ai studio>
+  MONGODB_URI=<your-mongodb-connection-string>
+  SOCKET_IO_PORT=3000
+  Replace <your-mongodb-connection-string> with your MongoDB URI (you can use MongoDB Atlas or a local MongoDB instance).
+
+4.**Start MongoDB Server**
+ Start your MongoDB server if using a local instance:
+ 
+
+ 
+**Running the Application**
+1.*Start the Backend Server* 
+  Open a terminal in the project directory and run:
+  npx nodemon
+  The backend server should now be running on http://localhost:5000.
+
+2.*Start the Frontend*
+ Open another terminal in the project directory and run:
+ npm run dev
+ The frontend will launch in your default browser at http://localhost:3000.
+
+3.Access the Application
+ Open your browser and navigate to http://localhost:3000 to use the Collaborative Code Reviewer.
+
 
 Feel free to modify this file further to fit your specific needs. Let me know if you'd like any additional sections or customizations!
