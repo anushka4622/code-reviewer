@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import './home.css'
+import './Home.css'
 import axios from 'axios'
 import { useEffect } from 'react'
 
@@ -9,7 +9,7 @@ const Home = () => {
   const [projects, setProjects] = useState([])
 
   function navigateToProject(projectId){
-    navigate('/project/${projectId}')
+    navigate(`/project/${projectId}`)
   }
 
   useEffect(()=>{

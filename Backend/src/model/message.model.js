@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 
 const messageSchema = new mongoose.Schema({
     project: {
-        type:String,
+        type:mongoose.Schema.Types.ObjectId,
         ref: 'Project',
         required: [ true, 'Project is required' ],
     },

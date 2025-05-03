@@ -38,7 +38,7 @@ const Project = () => {
     }
 
     useEffect(() => {
-        const io = SocketIo("https://localhost:3000", {
+        const io = SocketIo("http://localhost:3000", {
             query: {
                 project: prams.id
             }
@@ -148,7 +148,7 @@ const Project = () => {
                             getReview()
                         }}
                         className='get-review' >
-                        get-review
+                        Get Review
                     </button>
                 </div>
             </section>
