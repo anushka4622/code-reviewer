@@ -108,52 +108,71 @@
 .project-section .review{
     background-color: rgb(252, 234, 229);
     position: relative;
-    padding: 1rem;
+    padding: 0.75rem;
     overflow-y: auto;
 }
 
 .project-section .review .get-review{
     position: absolute;
-    top:1rem;
-    right: 1rem;
-    padding:0.5rem 1rem ;
+    top: 0.75rem;
+    right: 0.75rem;
+    padding: 0.4rem 0.8rem;
     border: none;
-    border-radius: 0.5rem;
+    border-radius: 0.4rem;
     background-color: #fdfcfc;
     cursor: pointer;
     box-shadow: 0 0 5px rgb(199, 199, 199);
+    font-size: 0.9rem;
 }
 
 .project-section .review .review-content {
-    margin-top: 3rem;
-    padding: 1rem;
+    margin-top: 2.5rem;
+    padding: 0.75rem;
     background-color: white;
-    border-radius: 0.5rem;
+    border-radius: 0.4rem;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem;
+    line-height: 1.4;
 }
 
 .project-section .review .review-content pre {
     background-color: #f6f8fa;
-    padding: 1rem;
+    padding: 0.75rem;
     border-radius: 0.3rem;
     overflow-x: auto;
+    margin: 0.5rem 0;
+    font-size: 0.85rem;
 }
 
 .project-section .review .review-content code {
     font-family: monospace;
     background-color: #f6f8fa;
-    padding: 0.2rem 0.4rem;
+    padding: 0.15rem 0.3rem;
     border-radius: 0.2rem;
+    font-size: 0.85rem;
 }
 
 .project-section .review .review-content ul,
 .project-section .review .review-content ol {
-    padding-left: 1.5rem;
-    margin: 1rem 0;
+    padding-left: 1.25rem;
+    margin: 0.5rem 0;
 }
 
 .project-section .review .review-content h1,
 .project-section .review .review-content h2,
 .project-section .review .review-content h3 {
-    margin: 1.5rem 0 1rem;
+    margin: 1rem 0 0.5rem;
+    font-size: 1.1rem;
+}
+
+.project-section .review .review-content h2 {
+    font-size: 1rem;
+}
+
+.project-section .review .review-content h3 {
+    font-size: 0.95rem;
+}
+
+.project-section .review .review-content p {
+    margin: 0.5rem 0;
 }
